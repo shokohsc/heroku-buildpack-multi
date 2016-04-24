@@ -1,5 +1,11 @@
-# Deprecated
+# heroku-buildpack-multi
 
-This project is deprecated and is no longer being maintained.
+Use multiple buildpacks on your app
 
-Please check out my current project [Convox](https://convox.com) for all of your deployment needs!
+## Usage
+
+    $ heroku config:add BUILDPACK_URL=https://github.com/shokohsc/heroku-buildpack-multi.git
+
+    $ cat .buildpacks
+    https://github.com/heroku/heroku-buildpack-nodejs.git#0198c71daa8
+    https://github.com/heroku/heroku-buildpack-ruby.git#v86
